@@ -5,6 +5,7 @@ import time
 import datetime
 import ssl
 from threading import Thread
+import config
 
 # set to true on debug environment only
 DEBUG = True
@@ -327,7 +328,7 @@ def procCandlesExample(msg):
 def main():
     # enter your login credentials here
     userId = 14419760
-    password = "@sqqH97ToEuF&D"
+    password = config.PASSWORD
 
     # create & connect to RR socket
     client = APIClient()
